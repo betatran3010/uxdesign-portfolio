@@ -5,8 +5,9 @@ import { ArrowLeft, Clock, Wrench, Users, CheckCircle2, UserCircle2 } from 'luci
 import Button from './Button';
 import XplainProblemSection from './XplainProblemSection';
 import XplainSolutionSection from './XplainSolutionSection';
-import XplainTranslationSection from './XplainTranslationSection';
 import XplainPersonalizationSection from './XplainPersonalizationSection';
+import XplainTranslationSection from './XplainTranslationSection';
+import XplainReflectionSection from './XplainReflectionSection';
 import ReposetDetailSection from './ReposetDetailSection';
 
 interface ProjectDetailProps {
@@ -71,11 +72,11 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, onNext }
             {project.year}
           </span>
         </div>
-        
+
         <h1 className={`text-3xl sm:text-4xl md:text-6xl font-heading font-extrabold ${theme.heading} leading-tight`}>
           {project.title}
         </h1>
-        
+
         <p className={`text-lg md:text-2xl font-bold max-w-3xl leading-relaxed ${theme.text}`}>
           {project.description}
         </p>
@@ -130,31 +131,34 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, onNext }
 
       {/* Case Study Content - Full Width */}
       <div className={`w-full max-w-6xl mx-auto space-y-24 text-lg leading-relaxed ${theme.text}`}>
-          
-          {isXplain ? (
-            <>
-               <section>
-                <XplainProblemSection />
-              </section>
-              <section>
-                <XplainSolutionSection />
-              </section>
-              <section>
-                 <XplainPersonalizationSection />
-              </section>
-              <section>
-                 <XplainTranslationSection />
-              </section>
-            </>
-          ) : isReposet ? (
-            <ReposetDetailSection />
-          ) : null}
+
+        {isXplain ? (
+          <>
+            <section>
+              <XplainProblemSection />
+            </section>
+            <section>
+              <XplainSolutionSection />
+            </section>
+            <section>
+              <XplainPersonalizationSection />
+            </section>
+            <section>
+              <XplainTranslationSection />
+            </section>
+            <section>
+              <XplainReflectionSection />
+            </section>
+          </>
+        ) : isReposet ? (
+          <ReposetDetailSection />
+        ) : null}
 
       </div>
-      
+
       {/* Footer Navigation */}
       <div className={`mt-24 pt-12 border-t-2 ${theme.border} flex justify-center`}>
-         <Button onClick={onNext || onBack} variant="ink">View Other Projects</Button>
+        <Button onClick={onNext || onBack} variant="ink">View Other Projects</Button>
       </div>
 
     </div>
