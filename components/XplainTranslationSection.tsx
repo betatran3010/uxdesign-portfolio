@@ -5,16 +5,9 @@ import {
   Layers,
   Search,
   MessageSquare,
-  ArrowRight,
   Layout,
-  ClipboardCheck,
-  FileText,
-  Monitor,
-  BookOpen,
-  Eye,
   Activity,
   CircleQuestionMark,
-  CircleCheck,
   ChevronLeft,
   ChevronRight
 } from 'lucide-react';
