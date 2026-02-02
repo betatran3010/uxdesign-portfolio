@@ -124,7 +124,7 @@ const XplainPersonalizationSection: React.FC = () => {
       </div>
 
       {/* 3.1 Scenario & Design */}
-      <section className="space-y-12">
+      <section className="space-y-10">
         <div className="flex items-center gap-3 border-b-2 border-slate-100 pb-4">
           <div className="p-2 bg-primary-light rounded-lg">
             <Layout className="w-5 h-5 text-primary-dark" />
@@ -133,41 +133,9 @@ const XplainPersonalizationSection: React.FC = () => {
         </div>
 
         {/* Scenario Script */}
-        <div>
-          <h4 className="text-lg font-bold text-ink mb-4">General Conversational Scenario</h4>
-          <p className="text-ink-light mb-6 text-lg">
-            We chose <span className="text-ink font-bold">data privacy</span> as it involves abstract concepts, institutional language, and culturally specific terminology that vary widely across proficiency levels while still eliciting participants’ values and perspectives easily.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-2xl border-2 border-slate-100 shadow-sm">
-              <div className="text-xs font-black text-primary uppercase tracking-widest mb-3">Low Proficiency</div>
-              <ul className="space-y-2 text-base text-ink-light list-disc pl-4 marker:text-primary">
-                <li>Shorter turns, explicit framing of questions</li>
-                <li>Topics introduced with concrete examples</li>
-              </ul>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border-2 border-slate-100 shadow-sm">
-              <div className="text-xs font-black text-primary uppercase tracking-widest mb-3">Medium Proficiency</div>
-              <ul className="space-y-2 text-base text-ink-light list-disc pl-4 marker:text-primary">
-                <li>Moderately complex discourse</li>
-                <li>Balanced abstract + concrete framing</li>
-              </ul>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border-2 border-slate-100 shadow-sm">
-              <div className="text-xs font-black text-primary uppercase tracking-widest mb-3">High Proficiency</div>
-              <ul className="space-y-2 text-base text-ink-light list-disc pl-4 marker:text-primary">
-                <li>Conceptually dense, abstract framing</li>
-                <li>Longer turns, implicit structure</li>
-                <li>Assumes strong linguistic competence</li>
-              </ul>
-            </div>
-          </div>
-
-          <p className="text-ink-light mb-6 mt-8 text-lg">
-            While real conversations vary in difficulty regardless of proficiency, each script’s overall style was tuned to naturally support the clarification targets and suggestion needs that followed. Differences in framing, turn length, and conceptual density ensured that clarification and suggestion behaviors felt appropriate rather than forced.
-          </p>
-        </div>
+        <p className="text-ink-light mb-6 text-lg">
+          We evaluated personalization using a <span className="text-ink font-bold">data privacy</span> discussion as it involves abstract concepts, institutional language, and culturally specific terminology that vary widely across proficiency levels while still eliciting participants’ values and perspectives easily.
+        </p>
 
         {/* Feature Design: Clarifications */}
         <div className="space-y-6">
