@@ -19,7 +19,7 @@ const About: React.FC = () => {
             </p>
           </div>
 
-          <div className="space-y-6 text-lg text-ink-light leading-relaxed">
+          <div className="space-y-6 text-base md:text-lg text-ink-light leading-relaxed">
             <p>
               My background in psychology and cognitive science helps me reason about how people understand interfaces, make decisions, and adapt to product constraints. Meanwhile, my interest in visual design and art pushes me to care deeply about clarity, aesthetics, and interaction details. I use both interdisciplinary perspectives to make pragmatic design decisions, navigate tradeoffs, and turn complex problems into clear, usable, well-crafted experiences that align with product goals and targeted users.
             </p>
@@ -54,7 +54,7 @@ const About: React.FC = () => {
             <h3 className="text-2xl md:text-3xl text-ink font-heading font-bold leading-tight">
               Women in Computing at Cornell <span className="font-sans font-normal text-ink-light text-xl block sm:inline sm:ml-2"> - Faculty Relations Director</span>
             </h3>
-            <p className="text-lg text-ink-light leading-relaxed max-w-4xl">
+            <p className="text-base md:text-lg text-ink-light leading-relaxed max-w-4xl">
               Fostering an inclusive community for women and gender minorities in tech. I organize the Lunch Bunch program, facilitating weekly roundtable discussions that connect underclassmen with faculty and encourage early research engagement. I engage with many accomplished HCI researchers and learn about their work through this initiative! I also represent WICC and the student body in faculty board meetings to discuss coursework, advising, workload, and departmental improvements.
             </p>
           </div>
@@ -100,7 +100,7 @@ const About: React.FC = () => {
             <h3 className="text-2xl md:text-3xl text-ink font-heading font-bold leading-tight">
               Communication and Collaborative Technologies Lab <span className="font-sans font-normal text-ink-light text-xl block sm:inline sm:ml-2"> - Research Assistant</span>
             </h3>
-            <p className="text-lg text-ink-light leading-relaxed max-w-4xl">
+            <p className="text-base md:text-lg text-ink-light leading-relaxed max-w-4xl">
               Working on the XPLAIN project. Here's a pic of our lab outing!
             </p>
           </div>
