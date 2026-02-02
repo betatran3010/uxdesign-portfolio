@@ -15,15 +15,13 @@ const About: React.FC = () => {
               Hi, I'm <span className="text-primary">Tran Le</span>!
             </h1>
             <p className="text-xl md:text-2xl text-ink-light font-bold leading-relaxed max-w-lg">
-              I’m from Saigon, Vietnam. I’m a junior double-majoring in Information Science and Psychology, with interests in HCI, cognitive science, and human-centered design.            </p>
+              I’m from Saigon, Vietnam. I’m a junior double-majoring in Information Science and Psychology, with interests in UX, HCI, and human-centered design.
+            </p>
           </div>
 
           <div className="space-y-6 text-lg text-ink-light leading-relaxed">
             <p>
-              My work focuses on how technology can augment human experience, especially around accessibility, inclusivity, social interaction, and social computing. I care deeply about the human side of systems: how people think, communicate, and engage with technology in realistic contexts, and how design can better support diverse users. This interdisciplinary perspective now guides how I approach my work, balancing technical feasibility with cognitive, social, and ethical considerations.
-            </p>
-            <p>
-              A fun fact about me is that my name, Tran, partly comes from the Vietnamese word for “value,” a principle my parents emphasized and one I’ve grown up living by. With limited exposure to computing and psychology in my early education, I learned to value both my constraints and the opportunities I can find, motivating me to proactively seek experiences and fully invest in my interests and growth. I also deeply value the relationships and interactions that have shaped my path, from my parents and teachers to mentors, labmates, and the communities I’ve worked with, all of whom have strengthened my sense of empathy, responsibility, and care in the work I do.
+              My background in psychology and cognitive science helps me reason about how people understand interfaces, make decisions, and adapt to product constraints. Meanwhile, my interest in visual design and art pushes me to care deeply about clarity, aesthetics, and interaction details. I use both interdisciplinary perspectives to make pragmatic design decisions, navigate tradeoffs, and turn complex problems into clear, usable, well-crafted experiences that align with product goals and targeted users.
             </p>
           </div>
         </div>
@@ -57,7 +55,7 @@ const About: React.FC = () => {
               Women in Computing at Cornell <span className="font-sans font-normal text-ink-light text-xl block sm:inline sm:ml-2"> - Faculty Relations Director</span>
             </h3>
             <p className="text-lg text-ink-light font-medium leading-relaxed max-w-4xl">
-              Fostering an inclusive community for women and gender minorities in tech. I organize the Lunch Bunch program, facilitating weekly roundtable discussions that connect underclassmen with faculty and encourage early research engagement. I engage with many accomplished HCI researchers and learn about their work through this initiative! I also represent WICC and the student body in faculty board meetings to discuss coursework, advising, workload, and departmental improvements.            
+              Fostering an inclusive community for women and gender minorities in tech. I organize the Lunch Bunch program, facilitating weekly roundtable discussions that connect underclassmen with faculty and encourage early research engagement. I engage with many accomplished HCI researchers and learn about their work through this initiative! I also represent WICC and the student body in faculty board meetings to discuss coursework, advising, workload, and departmental improvements.
             </p>
           </div>
 

@@ -11,6 +11,32 @@ import { Linkedin, Mail, Heart, Github } from 'lucide-react';
 const projects: Project[] = [
   {
     id: 1,
+    title: "Reposet",
+    context: "Human-Computer Interaction Course",
+    problem: "How might we help students reuse and restyle what they already own by reducing outfit decision effort while adapting to daily context and motivating sustainable wardrobe rotation?",
+    image: `${import.meta.env.BASE_URL}images/reposet-cover.png`,
+    tags: ["UX/UI Design", "Product Design", "Mobile App"],
+    year: "Aug–Dec 2025",
+    description: "A context-aware wardrobe system that supports outfit planning, clothing rotation, and sustainable reuse in everyday student life.",
+    role: "UX/UI Designer",
+    team: "4 designers",
+    duration: "Aug–Dec 2025",
+    tools: ["Figma"],
+    contextOverview: <>
+      Many college students own many clothes but repeatedly wear only a small subset due to rushed mornings, cluttered closets, and decision fatigue. Reposet is a wardrobe companion designed to help students dress more intentionally using what they already own, while staying prepared for changing weather, especially in places like Cornell with highly variable conditions, alongside shifting schedules and social contexts typical of student life. I contributed across the full HCI cycle, including user research, design, prototyping, and evaluation. <span className="text-ink font-bold">The project received an A.</span>
+    </>,
+  },
+  {
+    id: 2,
+    title: "Duolingo’s Note-Taking Feature Case Study",
+    context: "Digital Product Design Course",
+    problem: "How might we design for long-term memory and meaningful language recall, not just daily engagement, in Duolingo's fast-paced learning environment?",
+    image: `${import.meta.env.BASE_URL}images/duolingo-cover.png`,
+    tags: ["UX/UI Design", "Product Design", "Mobile App", "EdTech"],
+    year: "Feb–May 2025",
+  },
+  {
+    id: 3,
     title: "XPLAIN",
     context: "Communication & Collaborative Technologies Lab",
     problem: "How might we design a proactive AI system that anticipates and scaffolds prediction during real-time turn-taking to reduce comprehension, production, and participation barriers faced by non-native speakers in computer-mediated live conversations?",
@@ -25,9 +51,8 @@ const projects: Project[] = [
     contextOverview: (
       <>
         <p>
-          XPLAIN is a long-running HCI research project with Professor Susan Fussell examining how proactive AI content prediction and generation can support non-native speakers in real-time video meetings. I contributed to the design, prototyping, and evaluation of XPLAIN across multiple Wizard-of-Oz studies, spanning literature review, conversational scenario design, interface design and prototyping, survey development, user studies, and data analysis.
+          XPLAIN is a long-running HCI research project with Professor Susan Fussell that also participates in Cornell’s Entrepreneurship eLab student startup accelerator. The project explores how proactive AI content prediction and generation can support non-native speakers during real-time video meetings. I contributed to the design, prototyping, and evaluation of XPLAIN across multiple Wizard-of-Oz studies, spanning literature review, conversational scenario design, interface design and prototyping, survey development, user studies, and data analysis.
         </p>
-
         <p className="mt-4">
           <span className="text-ink font-bold">
             This project is mentioned in this paper:
@@ -46,7 +71,7 @@ const projects: Project[] = [
     ),
   },
   {
-    id: 2,
+    id: 4,
     title: "Designing for the Communication Needs of International Students in U.S. Healthcare Settings",
     context: "Computing & Global Development Course",
     problem: "How do international students experience communication challenges in U.S. healthcare, how effective are existing tools and strategies, and what unmet needs and design opportunities emerge across students, interpreters, and providers?",
@@ -54,33 +79,8 @@ const projects: Project[] = [
     tags: ["Social Computing", "ICTD", "Inclusive Design", "Health Communication"],
     year: "Aug–Dec 2025",
   },
-  {
-    id: 3,
-    title: "Reposet",
-    context: "Human-Computer Interaction Course",
-    problem: "How might we help students reuse and restyle what they already own by reducing outfit decision effort while adapting to daily context and motivating sustainable wardrobe rotation?",
-    image: `${import.meta.env.BASE_URL}images/reposet-cover.png`,
-    tags: ["UX/UI Design", "Product Design", "Mobile App"],
-    year: "Aug–Dec 2025",
-    description: "A context-aware wardrobe system that supports outfit planning, clothing rotation, and sustainable reuse in everyday student life.",
-    role: "UX/UI Designer",
-    team: "4 designers",
-    duration: "Aug–Dec 2025",
-    tools: ["Figma"],
-    contextOverview: <>
-      Many college students own many clothes but repeatedly wear only a small subset due to rushed mornings, cluttered closets, and decision fatigue. Reposet is a wardrobe companion designed to help students dress more intentionally using what they already own, while staying prepared for changing weather, especially in places like Cornell with highly variable conditions, alongside shifting schedules and social contexts typical of student life. I contributed across the full HCI cycle, including user research, design, prototyping, and evaluation. <span className="text-ink font-bold">The project received an A.</span>
-    </>,
-  },
-  {
-    id: 4,
-    title: "Duolingo’s Note-Taking Feature Case Study",
-    context: "Digital Product Design Course",
-    problem: "How might we design for long-term memory and meaningful language recall, not just daily engagement, in Duolingo's fast-paced learning environment?",
-    image: `${import.meta.env.BASE_URL}images/duolingo-cover.png`,
-    tags: ["UX/UI Design", "Product Design", "Mobile App", "EdTech"],
-    year: "Feb–May 2025",
-  },
 ];
+
 
 // Helper to parse the current hash into a View
 const getViewFromHash = (): View => {
@@ -204,15 +204,18 @@ const App: React.FC = () => {
                   <ProjectCard
                     project={project}
                     onClick={(id) => {
-                      if (id === 2) {
+                      if (id === 4) {
                         // Healthcare Project - Opens PDF
                         window.open(
                           `${import.meta.env.BASE_URL}documents/healthcare-international-students.pdf`,
                           '_blank'
                         );
-                      } else if (id === 4) {
+                      } else if (id === 2) {
                         // Duolingo - Opens Website Link
-                        window.open('https://medium.com/@trannble/write-it-down-remember-it-later-designing-duolingos-note-taking-experience-9f8f5ce9a174', '_blank');
+                        window.open(
+                          'https://medium.com/@trannble/write-it-down-remember-it-later-designing-duolingos-note-taking-experience-9f8f5ce9a174',
+                          '_blank'
+                        );
                       } else {
                         // Standard Projects - Opens Detail View
                         setCurrentView({ type: 'project', id });
@@ -226,6 +229,7 @@ const App: React.FC = () => {
           </div>
         );
     }
+
   };
 
   return (
